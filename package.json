@@ -1,0 +1,12 @@
+{
+  "name": "ayyash.tech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve --config=devconfig.js",
+	"build": "eleventy --config=distconfig.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

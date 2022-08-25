@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Jeeran",
+		"slug": "jeeran",
+		"date": "Sept 2019",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab a quae illum cumque eligendi eaque, nihil dolore esse illo neque dolor vitae atque, minus id commodi rerum officia quibusdam!",
+		"longDescription": "specfic url of page",
+		"skills": ["html", "angular"]
+	},
+	{
+		"name": "Aumet",
+		"slug": "aumet",
+		"date": "Sept 2019",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab a quae illum cumque eligendi eaque, nihil dolore esse illo neque dolor vitae atque, minus id commodi rerum officia quibusdam!",
+		"longDescription": "specfic url of page",
+		"skills": [
+			"css", "html"
+		]
+	}
+]

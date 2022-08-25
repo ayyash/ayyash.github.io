@@ -1,0 +1,17 @@
+---
+layout: "jobs.html"
+pagination:
+    data: jobs
+    size: 1
+    alias: job
+permalink: "jobs/{{ job.name | slug }}/"
+eleventyComputed:
+  name: "{{job.name}}"
+---
+
+{{ job.name }} {{ job.description }} 
+
+
+{% include './_data/jobs/{{job.slug}}.html', my_other_variable: 'oranges' %}
+
+

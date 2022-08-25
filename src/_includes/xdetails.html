@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Job description: {{ title }}</title>
+</head>
+<body>
+
+	{% assign x = jobs | where: "slug", page.fileSlug | first %}
+	<pre>
+
+		{{ x | json }}
+	</pre>
+	<div class="content">
+		<h4>{{ x.name }}</h4>
+		<div>
+			{{ x.description }}
+		</div>
+		{% block content %}
+            {{ content  }}
+        {% endblock content %}
+	</div>
+	
+</body>
+</html>
