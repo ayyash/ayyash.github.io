@@ -1,0 +1,30 @@
+---
+layout: "base"
+pagination:
+    data: jobs
+    size: 1
+    alias: job
+permalink: "jobs/{{ job.slug }}/"
+eleventyComputed:
+  title: "{{job.name}}"
+---
+
+<div class="page">
+	<div class="container">
+		<h3>{{ job.name }}</h3>
+		{{ job.date }}
+		<p>
+			{% include './_data/jobs/{{job.slug }}.html', region: 'short' %}
+		</p>
+		{% for skill in job.skills %}
+		<span class="label small label-blue">{{ skills[skill].name }}</span>
+		{% endfor %}
+	<hr>
+
+		{% include './_data/jobs/{{job.slug }}.html', region: 'long' %}
+		
+		
+	</div>
+</div>
+
+

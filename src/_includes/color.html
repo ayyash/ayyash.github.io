@@ -1,0 +1,17 @@
+---
+layout: "base"
+title: Color
+---
+
+<div>Here is the color details {{ color }}</div>
+{{ content }}
+
+<div>
+    <h5>List of all colors</h5>
+    <ul>
+        {% for item in collections.colors %}
+        <li {% if page.url == item.url %}class="selected"{% endif %}>
+			<a href="{{item.url}}">{{ item.data.color }}</a></li>
+        {%- endfor -%}
+    </ul>
+</div>

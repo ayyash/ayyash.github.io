@@ -10,6 +10,10 @@
 	"angular": {
 		"name": "Angular",
 		"level": 5
+	},
+	"vuejs": {
+		"name": "VueJS",
+		"level": 1
 	}
 	
 }

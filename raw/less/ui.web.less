@@ -1,0 +1,24 @@
+
+.tag {
+	display: inline-block;
+	color: @text-light;
+
+	&:before {
+		content: '<';
+	}
+	&:after {
+		content: '>';
+	}
+}
+.selftag {
+	display: inline-block;
+	
+	&:before {
+		content: '<';
+		color: @text-light;
+	}
+	&:after {
+		content: '/>';
+		color: @text-light;
+	}
+}

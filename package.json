@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve --config=devconfig.js",
-	"build": "eleventy --config=distconfig.js"
+    "start": "eleventy --serve",
+    "build": "eleventy --config=.distconfig.js",
+	 "postbuild": "cd gulpbin && npm run build"
   },
   "author": "",
   "license": "ISC"

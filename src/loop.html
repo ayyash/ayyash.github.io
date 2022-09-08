@@ -1,0 +1,27 @@
+---
+layout: "base"
+pagination:
+    data: jobs
+    size: 1
+    alias: job
+permalink: "loop/{{ job.slug }}/"
+eleventyComputed:
+  title: "{{job.name}}"
+---
+
+<h4>{{ job.name }}</h4>
+
+{% include './_data/jobs/{{job.slug }}.html', theme: 'light' %}
+{% liquid
+	assign _filepath = './_data/jobs/' | append: job.slug  | append: '.html'
+	# comment
+%}
+<article>
+	<header>
+		{% include _filepath, region: 'header' %}
+	</header>
+	<div>
+		{% include _filepath, region: 'content' %}
+	</div>
+ </article>
+
