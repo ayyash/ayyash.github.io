@@ -1,15 +1,26 @@
 // nothing overwritten yet
 
-@fontface: 'Fuzzy Bubbles', Consolas;
+// @fontface: 'Love Ya Like A Sister', cursive;
+@fontface: 'Inter', sans-serif;
 
-@font-weight-light: 400;
+@font-weight-light: 200;
 @font-weight: 400;
-@font-weight-medium: 700;
-@font-weight-bold: 700;
+@font-weight-medium: 500;
+@font-weight-bold: 900;
 
 @font-weight-set: {
-	// light: @font-weight-light;
+	light: @font-weight-light;
 	normal: @font-weight;
-	// medium: @font-weight-medium;
+	medium: @font-weight-medium;
 	bold: @font-weight-bold;
+};
+
+
+@screen: {
+	xs: 480px; // special cases
+	sm: 600px; // mobile interface
+	md: 720px; // tablet portrait (used in Shut)
+	lg: 960px; // the usual desktop and landscape tablets (used in Shut)
+	xl: 1280px; // more popular small desktop (used in Shut)
+	ds: 1600px; // up above desktop
 };
